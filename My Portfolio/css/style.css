@@ -1,0 +1,41 @@
+body{
+  background-color: #0f3057;
+}
+
+.myDiv{
+  background-color: white;
+  border-radius: 5px;
+  box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.4);
+  animation: floatWidget 2s ease-in-out infinite alternate;
+}
+
+/* navbar */
+
+#navBar li{
+  margin: 10px;
+  list-style: none;
+  color: white;
+}
+
+
+/* Intro Room */
+
+.introRoom{
+  margin-top: 5vh;
+}
+
+.title-img{
+  animation: floatWidget 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes floatWidget{
+  from{
+    transform: translateY(0);
+  }
+  to{
+    transform: translateY(10px);
+  }
+}
