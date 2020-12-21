@@ -28,6 +28,12 @@
 </head>
 <body>
 
+  <!-- background text -->
+
+  <div class="bck-txt">
+    <p>ashwathpc</p>
+  </div>
+
   <!-- navigation Bar -->
   <section id="navBar">
     <div class="container">
@@ -60,14 +66,17 @@
   <section id="introRoom">
     <div class="myDiv introRoom container">
       <div class="row title-name">
-        <div class="col-md-6">
+        <div class="col-md-6 tiltCard">
           <h3>Hi,</h3>
           <h1>
             <span class="Name-font">I'm 
               <span class="txt-type" data-wait="3000" data-words='["Ashwath P C","a Designer","a Developer","a Tester"]'></span>            
             </span>
           </h1>
-          <h2><span class="Title-font"></span>Glad you are here 😃!</h2>
+          <h4><span class="Title-font"></span>Glad you are here 😃 !</h2>
+          <hr>
+          <button type="button" class="btn btn-outline-light myBtn">Hire Me</button>
+          
         </div>
         <div class="col-lg-6">
           <img class="title-img" src="images/Title.svg" alt="title-img">
@@ -75,7 +84,19 @@
       </div>
     </div>
   </section>
+
 <script src="JS/main.js"></script>
+
+<!-- Vennila Tilt JS Script -->
+<script type="text/javascript" src="JS/vanilla-tilt.js"></script>
+<script type="text/javascript">
+  VanillaTilt.init(document.querySelector(".tiltCard"),{
+		max: 25,
+    speed: 400,
+	});
+	
+	
+</script>
 </body>
 
 </html>
