@@ -3,10 +3,13 @@
   margin: 0;
 }
 body{
-  background-color: #0f3057;
+  /* background-color: #0f3057; */
+  background-color: #fff;
+
   font-family: 'Quicksand', sans-serif;
   /* color: #00587a; */
-  color: #0f3057;
+  /* color: #0f3057; */
+  color: #222831;
   text-align: center;
 }
 
@@ -14,8 +17,8 @@ body{
   background-color: rgba(231, 231, 222, 0.3);
   border-radius: 5px;
   box-shadow:
-       inset 0 -3em 3em rgba(0,0,0,0.1),
-             0.3em 0.3em 1em rgba(0,0,0,0.4);
+       inset 0 -3em 3em rgba(255, 255, 255, 0.1),
+             0.3em 0.3em 1em rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(5px);
   animation: floatWidget 2s ease-in-out infinite alternate;
 }
@@ -29,7 +32,22 @@ body{
 #navBar li{
   margin: 10px;
   list-style: none;
-  color: #e7e7de;
+  /* color: #e7e7de; */
+  color: #fdb827;
+  font-weight: 700;
+}
+
+/* background arcade */
+
+.arcade{
+  position: absolute;
+  
+  
+}
+
+.packBoard{
+  /* width: 100%;
+  margin: 15% 15% 0; */
 }
 
 /* bckground text */
@@ -37,14 +55,18 @@ body{
 .bck-txt{
   width: 65%;
   position: absolute;
-  color: rgba(0, 88, 122, 0.5);
-  font-size: 600px;
+  color: rgba(238, 238, 238, 0.5);
+  font-size: 500px;
+  margin-top: 10%;
   margin-left: 35%;
-  padding-right: -20%;
   font-weight: 900;
-  text-shadow: 0 -3em 3em rgba(0,0,0,0.1);
+  text-shadow:
+       inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+             0.3em 0.3em 1em rgba(0, 0, 0, 0.4);
+
   overflow: hidden;
-  -webkit-text-stroke: 2px  #00587a;
+  -webkit-text-stroke: 2px  #fdb827;
+  font-family: 'Press Start 2P', cursive;
 }
 
 
